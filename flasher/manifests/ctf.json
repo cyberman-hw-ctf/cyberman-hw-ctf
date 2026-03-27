@@ -1,0 +1,15 @@
+{
+  "name": "Cyberman HW-CTF",
+  "version": "v1.0.0a",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        { "path": "/firmware/ctf/bootloader.bin", "offset": 0 },
+        { "path": "/firmware/ctf/partitions.bin", "offset": 32768 },
+        { "path": "/firmware/ctf/firmware.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}

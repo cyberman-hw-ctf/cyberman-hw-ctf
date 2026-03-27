@@ -1,0 +1,15 @@
+{
+  "name": "Diagnostics",
+  "version": "v1.0.0b",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        { "path": "/firmware/arduino_diagnostics/bootloader.bin", "offset": 0 },
+        { "path": "/firmware/arduino_diagnostics/partitions.bin", "offset": 32768 },
+        { "path": "/firmware/arduino_diagnostics/firmware.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
